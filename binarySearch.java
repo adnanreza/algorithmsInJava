@@ -27,7 +27,20 @@ class BinarySearch {
 
 	/*Iterative binary search algorithm*/
 	public static int binarySearchI(int [] array, int target, int left, int right) {
-		
+		while(left <= right) {
+			int middle = (left + right) / 2;
+		}
+		if(target == array[middle]) {
+			return middle;
+		}
+		else if(target > array[middle]) {
+			left = middle + 1;
+		}
+		else {
+			right = middle - 1;
+		}
+		//if not found
+		return -1;
 	}
 
 }
