@@ -47,6 +47,25 @@ class SortingAlgorithms {
 	}
 
 	/*
+	  Insertion Sort
+	*/
+	public static int[] insertionSort(int [] array) {
+		//if array is empty, it is already sorted
+		if(array.length == 0) {
+			return new int[] {};
+		}
+
+		for(int i=1; i<array.length; i++) {
+			int j = i; //j points to current index we are looking at
+			while(j > 0 && array[j] < array[j-1]) {
+				swap(array, j, j-1);
+				j--;
+			}
+		}
+		return array;
+	}
+
+	/*
 	  Helper subroutine: Swap
 	*/
 	public static void swap(int [] array, int a, int b) {
