@@ -66,6 +66,18 @@ class SortingAlgorithms {
 	}
 
 	/*
+	  Quick Sort
+	*/
+	public static int[] quickSort(int[] array) {
+		quickSort(array, 0, array.length-1);
+		return array;
+	}
+	public static void quickSort(int[] array, int startIdx, int endIdx) {
+		
+	}
+
+
+	/*
 	  Helper subroutine: Swap
 	*/
 	public static void swap(int [] array, int a, int b) {
