@@ -73,7 +73,16 @@ class SortingAlgorithms {
 		return array;
 	}
 	public static void quickSort(int[] array, int startIdx, int endIdx) {
-		
+		//stopping condition
+		if(startIdx >= endIdx) {
+			return;
+		}
+		int pivotIdx = startIdx;
+		int leftIdx = startIdx + 1;
+		int rightIdx = endIdx;
+		while(rightIdx >= leftIdx) {
+			
+		}
 	}
 
 
