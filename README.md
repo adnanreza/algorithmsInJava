@@ -1,6 +1,6 @@
 ## algorithmsInJava
 
-## Authors
+## Author
 
 * **Adnan Reza**
 
